@@ -47,7 +47,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <Transistion show={isOpen} enter="transistion ease-out duration-100 transform" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="transistion ease-in duration-75 transform" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
+                <transition show={isOpen} enter="transistion ease-out duration-100 transform" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="transistion ease-in duration-75 transform" leaveFrom="opacity-100 scale-100" leaveto="opacity-0 scale-95">
                 {(ref) => (
                     <div className="md:hidden" id="mobile-menu">
                         <div ref={ref} className="bg-white mx-4 mr-20 pt-4 pb-4 space-y-1">
@@ -60,7 +60,7 @@ function Navbar() {
                         </div>
                     </div>
                 )}
-                </Transistion>
+                </transition>
             </nav>
         </div>
     )
