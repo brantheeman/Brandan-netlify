@@ -1,5 +1,11 @@
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
+import Navbar from "../components/Navbar";
+import heroPage from "../pages/heroPage";
+import Clients from "./clients";
+import Services from "./services";
+import News from "./news";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -9,9 +15,13 @@ export default function Home() {
         <meta name="description" content="Software Engineer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar/>
-          
+      <Navbar />
+      <heroPage />
+      <Clients />
+      <Services />
+      <News />
+      <Contact />
+      <Footer />      
     </div>
   )
 }
