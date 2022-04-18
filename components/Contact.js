@@ -17,7 +17,7 @@ function Contact() {
       </p>
       <div className="flex justify-center items-center gap-10">
         <div className="group md:w-72 w-80 h-12 rounded-md my-10  cursor-pointer flex justify-center items-center  hover:shadow-lg border border-violet-500 hover:bg-violet-500 ">
-          <Link href="#">
+          <Link href="mailto:branan.pratt1@gmail.com">
             <h1 className="text-violet-500 group-hover:text-white text-xl">
               Get In Touch
             </h1>
