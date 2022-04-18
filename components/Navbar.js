@@ -4,10 +4,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/Link";
 
 const navigation = [
-  { name: "Home", href: "/heroPage", current: true },
+  { name: "Home", href: "#", current: true },
   { name: "About", href: "#", current: false },
-  { name: "Languages", href: "/services", current: false },
-  { name: "Contact", href: "/Contacts", current: false },
+  { name: "Languages", href: "#", current: false },
+  { name: "Contact", href: "#", current: false },
 ];
 
 function classNames(...classes) {
