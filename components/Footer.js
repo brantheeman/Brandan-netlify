@@ -1,8 +1,7 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -14,18 +13,19 @@ function Footer() {
               Brandan<span className="text-indigo-600">Pratt</span>
             </p>
             <div className="flex gap-6 pb-5">
-              <FaInstagram href="" className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
+                <a>
+              <FaGithub href="https://github.com/brantheeman" className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
+              </a>
               <a href="https://twitter.com/JCrimsxn" target="_blank">
               <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
               </a>
               <a href='https://www.linkedin.com/in/brandan-p-267549114/' target="_blank">
               <FaLinkedin className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
               </a>
-              <FaYoutube href="" className="text-2xl cursor-pointer text-gray-500 hover:text-red-600" />
             </div>
           </ul>
         </div>
-        <div className="p-5">
+      <div className="p-5">
           <ul>
             <p className="text-gray-800 font-bold text-2xl pb-4">Product</p>
             <li className="text-gray-500 text-sm pb-2 font-semibold hover:text-violet-600 cursor-pointer">
