@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  FaMicrosoft,
-  FaDiscord,
-  FaApple,
-  FaAmazon,
-  FaUber,
-} from "react-icons/fa";
 
 function clients() {
   return (
@@ -15,10 +8,13 @@ function clients() {
         Who is<span className="font-bold"> Brandan?</span>
       </h2>
       <div className="flex justify-center items-center">
-        <div className="justify-self-auto ">
-          <p className="text-4xl text-center w-auto h-auto">
-              I am a problem solver, a builder, I am a Software Engineer.{'\n'}
-              I chose Programming because I had a love for videogames.
+        <div className="flex-wrap justify-self-auto shrink md:text-center ">
+          <p className="text-3xl px-8 py-8 ">
+              I am a problem solver, a builder, I am a Software Engineer.<br/>
+              I chose Programming because I had a love for videogames.<br/> I started by taking a course in
+              Software Developement Fundamentals from Synergy Bahamas.<br/> From the moment I passed the course with an "A"
+              I knew that I wanted to continue being a Developer.<br/> I proceeded to enroll in the Bahamas Technical and Vocational Institute, <br/>
+              where I got my foundation in understanding the principles of Programming.
           </p>
         </div>
       </div>
