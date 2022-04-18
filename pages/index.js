@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar from "../components/Navbar";
-import heroPage from "../pages/heroPage";
+import heroPage  from "./heroPage";
 import Clients from "./clients";
 import Services from "./services";
 import News from "./news";
@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <heroPage />
+      <heroPage/>
       <Clients />
       <Services />
       <News />
