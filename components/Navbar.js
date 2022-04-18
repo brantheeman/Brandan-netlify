@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Link from "react-scroll/modules/components/Link";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -58,9 +59,11 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button className="px-3 py-2 rounded-md text-sm font-medium border border-violet-100 text-violet-400 hover:bg-violet-500 hover:shadow-lg  hover:text-white">
+                  <a href="mailto:brandan.pratt1@gmail.com">
+                <button  className="px-3 py-2 rounded-md text-sm font-medium border border-violet-100 text-violet-400 hover:bg-violet-500 hover:shadow-lg  hover:text-white">
                   Get In Touch
                 </button>
+                </a>
               </div>
             </div>
           </div>
