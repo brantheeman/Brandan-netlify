@@ -17,7 +17,7 @@ function Footer() {
             </p>
             <div className="flex gap-6 pb-5">
                 <a>
-              <FaGithub href="https://github.com/brantheeman" className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
+              <FaGithub href="https://github.com/brantheeman" target="_blank" className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
               </a>
               <a href="https://twitter.com/JCrimsxn" target="_blank">
               <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
