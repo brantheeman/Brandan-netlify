@@ -3,10 +3,10 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Home", href: "#", current: true },
+  { name: "About", href: "#", current: false },
+  { name: "Languages", href: "#", current: false },
+  { name: "Contact", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -34,7 +34,7 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center ">
                   <h1 className="font-semibold text-xl cursor-pointer ">
-                    Stream<span className="text-violet-500">line</span>
+                    Brandan<span className="text-violet-500">Pratt</span>
                   </h1>
                 </div>
                 <div className="hidden sm:block sm:ml-6 md:ml-60">
