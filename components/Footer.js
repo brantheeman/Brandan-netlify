@@ -11,13 +11,17 @@ function Footer() {
         <div className="p-5 ">
           <ul>
             <p className="text-gray-800 font-bold text-3xl pb-6">
-              Stream<span className="text-indigo-600">line</span>
+              Brandan<span className="text-indigo-600">Pratt</span>
             </p>
             <div className="flex gap-6 pb-5">
-              <FaInstagram className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
+              <FaInstagram href="" className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
+              <a href="https://twitter.com/JCrimsxn" target="_blank">
               <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
+              </a>
+              <a href='https://www.linkedin.com/in/brandan-p-267549114/' target="_blank">
               <FaLinkedin className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
-              <FaYoutube className="text-2xl cursor-pointer text-gray-500 hover:text-red-600" />
+              </a>
+              <FaYoutube href="" className="text-2xl cursor-pointer text-gray-500 hover:text-red-600" />
             </div>
           </ul>
         </div>
