@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HeroImage from "../public/images/hero.jpg";
+import hero from "../public/images/hero.jpg";
 
 function heroPage() {
   return (
@@ -22,7 +22,7 @@ function heroPage() {
           </button>
         </div>
         <div className="px-10">
-          <Image src={HeroImage} width={900} height={900} objectFit="contain" />
+          <Image src={hero} width={900} height={900} objectFit="contain" />
         </div>
       </div>
     </div>
