@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
@@ -17,13 +18,16 @@ function Footer() {
             </p>
             <div className="flex gap-6 pb-5">
                 <a>
-              <FaGithub href="https://github.com/brantheeman" target="_blank" className="text-2xl cursor-pointer text-gray-500 hover:text-yellow-600" />
+              <FaGithub href="https://github.com/brantheeman" target="_blank" className="text-2xl cursor-pointer text-gray-500 hover:text-black" />
               </a>
               <a href="https://twitter.com/JCrimsxn" target="_blank">
-              <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
+              <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-blue-400" />
               </a>
               <a href='https://www.linkedin.com/in/brandan-p-267549114/' target="_blank">
-              <FaLinkedin className="text-2xl cursor-pointer text-gray-500 hover:text-violet-600" />
+              <FaLinkedin className="text-2xl cursor-pointer text-gray-500 hover:text-blue-600" />
+              </a>
+              <a href='https://api.whatsapp.com/send?phone=12428253991' target="_blank" alt="Contact me on Whatsapp">
+              <FaWhatsapp className="text-2xl cursor-pointer text-gray-500 hover:text-green-600" />
               </a>
             </div>
           </ul>
