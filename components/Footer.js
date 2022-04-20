@@ -17,8 +17,8 @@ function Footer() {
               Software<span className="text-indigo-600">Engineer</span>
             </p>
             <div className="flex gap-6 pb-5">
-                <a>
-              <FaGithub href="https://github.com/brantheeman" target="_blank" className="text-2xl cursor-pointer text-gray-500 hover:text-black" />
+              <a href="https://github.com/brantheeman" target="_blank">
+              <FaGithub  className="text-2xl cursor-pointer text-gray-500 hover:text-black" />
               </a>
               <a href="https://twitter.com/JCrimsxn" target="_blank">
               <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-blue-400" />
