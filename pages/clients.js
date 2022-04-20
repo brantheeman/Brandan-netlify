@@ -5,8 +5,9 @@ function clients() {
     <div className="flex-col justify-center items-center my-40">
       <p className="text-violet-500 uppercase text-center">About</p>
       <h2 className="text-5xl   text-center">
-        Who is<span className="font-bold"> Brandan?</span>
+        Who is<span className="font-bold"> Brandan?</span><br/>
       </h2>
+      <h3>This line is apart of the Animated-logo branch!Hello</h3>
       <div className="flex justify-center items-center">
         <div className="flex-wrap justify-self-auto shrink md:text-center ">
           <p className="text-3xl px-8 py-8 ">

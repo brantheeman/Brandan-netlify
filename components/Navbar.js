@@ -2,9 +2,10 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
+
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
+  { name: "About",href: "#", current: false },
   { name: "Languages", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ];
