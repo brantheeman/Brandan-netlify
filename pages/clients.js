@@ -2,7 +2,7 @@ import React from "react";
 
 function clients() {
   return (
-    <div className="flex-col justify-center items-center my-40">
+    <div id="About" className="flex-col justify-center items-center my-40">
       <p className="text-violet-500 uppercase text-center">About</p>
       <h2 className="text-5xl   text-center">
         Who is<span className="font-bold"> Brandan?</span><br/>

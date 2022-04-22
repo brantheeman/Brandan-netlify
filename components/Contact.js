@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <div className=" my-20 flex justify-center items-center flex-col">
+    <div id="Contact" className=" my-20 flex justify-center items-center flex-col">
       <p className="text-md uppercase text-violet-500 font-semibold py-2">
         {" "}
         Information
