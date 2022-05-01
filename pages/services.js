@@ -2,12 +2,13 @@ import React from "react";
 import {
     AiOutlineConsoleSql,
 } from "react-icons/ai";
-import smooth from "react-scroll/modules/mixins/smooth";
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGraphql, SiFlutter, SiVuedotjs } from "react-icons/si";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function services() {
   return (
-    <div id="Language" onClick={smooth} className="flex-col justify-center items-center my-20">
+    <Link activeClass="active" to="/services" smooth={true}>
+    <div id="Language" className="flex-col justify-center items-center my-20">
       <p className="text-violet-500 uppercase text-center">Languages & Frameworks</p>
       <h2 className="text-5xl  text-center">
         My <span className="font-bold">Languages</span>
@@ -71,6 +72,7 @@ function services() {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
 
