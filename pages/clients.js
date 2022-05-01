@@ -10,17 +10,10 @@ function clients() {
       <div className="flex justify-center items-center">
         <div className="flex-wrap justify-self-auto shrink md:text-left ">
           <p className="text-3xl px-8 py-8 ">
-<<<<<<< HEAD
-              I am an experienced Software Engineer located in Nassau, Bahamas. I am pursuing my Associates Degree in Software Engineering, and
-              I have been a Software Developer for one year now, and I am open to working on projects of all sorts, mainly in Web Front-End Development.
-              I am proficient with HTML5, CSS3, and JavaScript, and I am currently developing my skills with React and Vue. I am knowlegeable about database management, python, and java, but I mainly focus on web front-end technologies.
-              If you're interested in working with me, feel free to contact me to get in touch. I look forward to helping your project come to life.
-=======
-              I am an experienced Software Engineer located in Nassau, Bahamas. I am pursuing my Associates Degree in Software Engineering. </br>
-              I have been a Software Developer for one year now, and I am open to working on projects of all sorts, mainly in Web Development.</br>
-              I am proficient with HTML5, CSS3, and JavaScript, and I am currently developing my skills with React and Vue. I am knowlegeable about database management, python, and java, but I mainly focus on web technologies. </br>
+              I am an experienced Software Engineer located in Nassau, Bahamas. I am pursuing my Associates Degree in Software Engineering.
+              I have been a Software Developer for one year now, and I am open to working on projects of all sorts, mainly in Web Development.
+              I am proficient with HTML5, CSS3, and JavaScript, and I am currently developing my skills with React and Vue. I am knowlegeable about database management, python, and java, but I mainly focus on web technologies.
               If you're interested in working with me, feel free to contact me to get in touch, I look forward to helping your project come to life.
->>>>>>> 58e29cb65c1ba8ce2dcf8a19fd27e933abd63d79
           </p>
         </div>
       </div>
