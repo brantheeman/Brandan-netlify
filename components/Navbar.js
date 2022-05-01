@@ -1,83 +1,96 @@
-import React, {useState} from "react";
-import { Transition } from "@headlessui/react";
-import { Link } from "react-scroll";
-import Image from "next/image";
+/* This example requires Tailwind CSS v2.0+ */
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-function Navbar() {
-    const [isOpen, setisOpen] = useState(false);
-    return (
-        <div>
-            <nav className='fixed z-20 bg-white w-full'>
-                <div className='w-full'>
-                    <div className="flex items-center h-20 w-full">
-                        <div className="flex items-center sm:mx-10 md:mx-20 justify-between w-full">
-                            <div className="flex justify-center items-center flex-shrink-0">
-                                <h1 className="font-bold text-xl cursor-pointer">
-                                    Brandan<span className="text-blue-600">Pratt</span>
-                                </h1>
-                            </div>
-        
-                            <div className="hidden md:block">
-                                <div className="ml-10 flex items-baseline space-x-4">
-                                    <Link activeClass="Home" to="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Home</Link>
-                                    <Link activeClass="Services" to="services" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Services</Link>
-                                    <Link activeClass="Work" to="work" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Work</Link>
-                                    <Link activeClass="Clients" to="clients" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Clients</Link>
-                                    <Link activeClass="Contact" to="Contact" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Contacts</Link>
-                                </div>
-                            </div>
 
-                            <div className="flex justify-center item-center flex-shrink-0">
-                                <h1 className="font-semibold text-lg cursor-pointer hidden md:block">
-                                Contact<span className="text-blue-600">Me</span>
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="mr-14 flex md:hidden">
-                            <button onClick={() => setisOpen(!isOpen)} type="button" className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                                <span className="sr-only">Open main menu</span>
-                                {!isOpen ? (
-                                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="no" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6H16M4 12h16M4 18h16"/>
-                                </svg>
-                                ) 
-                                : 
-                                (
-                                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="no" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
-                                </svg>
-                                )}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                {/*small size: mobile div start */}
-                {/*Transistion properties for smooth transistion */}
-                <Transition 
-                show={isOpen} 
-                enter="transistion ease-out duration-100 transform" 
-                enterFrom="opacity-0 scale-95" 
-                enterTo="opacity-100 scale-100" 
-                leave="transistion ease-in duration-75 transform" 
-                leaveFrom="opacity-100 scale-100" 
-                leaveTo="opacity-0 scale-95"
-                >
-                {(ref) => (
-                            <div className="md:hidden" id="mobile-menu">
-                                <div ref={ref} className="bg-white mx-4 mr-20 pt-4 pb-4 space-y-1">
-                                    <Link href="/home" activeClass="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-                                    <Link href="/services" activeClass="services" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</Link>
-                                    <Link href="/work" activeClass="work" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</Link>
-                                    <Link href="/Clients" activeClass="Clients" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Clients</Link>
-                                    <Link href="/contacts" activeClass="contacts" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacts</Link>
-                                    <Link href="/Me" activeClass="Me" to="Me" smooth={true} offset={50} duration={500} className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact<span className="text-black">Me</span></Link>
-                                </div>
-                            </div>
-                        )}
-                </Transition>
-            </nav>
-        </div>
-    );
+
+const navigation = [
+  { name: "Home", href: "#Home", current: true },
+  { name: "About",href: "#About", current: false },
+  { name: "Languages", href: "#Language", current: false },
+  { name: "Contact", href: "#Contact", current: false },
+];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
 }
 
-export default Navbar;
+export default function Navbar() {
+  return (
+    <Disclosure as="nav" className="bg-white">
+      {({ open }) => (
+        <>
+          <div id="Home" style={{scrollBehavior:'smooth'}} className="min-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-white border-b border-gray-50">
+            <div className="relative flex items-center justify-between h-16 md:mx-20 mx-0">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex-shrink-0 flex items-center ">
+                  <h1 className="font-semibold text-xl cursor-pointer ">
+                    Brandan<span className="text-violet-500">Pratt</span>
+                  </h1>
+                </div>
+                <div className="hidden sm:block sm:ml-6 md:ml-60">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? "bg-violet-500 shadow-lg text-white"
+                            : "text-gray-300 hover:shadow-lg hover:bg-violet-500 hover:text-white",
+                          "px-3 py-2 rounded-md text-sm font-medium"
+                        )}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                  <a href="mailto:brandan.pratt1@gmail.com">
+                <button  className="px-3 py-2 rounded-md text-sm font-medium border border-violet-100 text-violet-400 hover:bg-violet-500 hover:shadow-lg  hover:text-white">
+                  Get In Touch
+                </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? "bg-violet-500 shadow-lg text-white"
+                      : "text-gray-300 hover:bg-violet-500 hover:shadow-lg hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
+                  )}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  );
+}
