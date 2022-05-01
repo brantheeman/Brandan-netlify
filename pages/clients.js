@@ -8,13 +8,12 @@ function clients() {
         Who is<span className="font-bold"> Brandan?</span><br/>
       </h2>
       <div className="flex justify-center items-center">
-        <div className="flex-wrap justify-self-auto shrink md:text-center ">
+        <div className="flex-wrap justify-self-auto shrink md:text-left ">
           <p className="text-3xl px-8 py-8 ">
-              I am a problem solver, a builder, I am a Software Engineer.<br/>
-              I chose Programming because I had a love for videogames.<br/> I started by taking a course in
-              Software Developement Fundamentals from Synergy Bahamas.<br/> From the moment I passed the course with an "A"
-              I knew that I wanted to continue being a Developer.<br/> I proceeded to enroll in the Bahamas Technical and Vocational Institute, <br/>
-              where I got my foundation in understanding the principles of Programming.
+              I am an experienced Software Engineer located in Nassau, Bahamas. I am pursuing my Associates Degree in Software Engineering. </br>
+              I have been a Software Developer for one year now, and I am open to working on projects of all sorts, mainly in Web Development.</br>
+              I am proficient with HTML5, CSS3, and JavaScript, and I am currently developing my skills with React and Vue. I am knowlegeable about database management, python, and java, but I mainly focus on web technologies. </br>
+              If you're interested in working with me, feel free to contact me to get in touch, I look forward to helping your project come to life.
           </p>
         </div>
       </div>
