@@ -2,11 +2,9 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-
-
 const navigation = [
   { name: "Home", href: "#Home", current: true },
-  { name: "About",href: "#About", current: false },
+  { name: "About",href: "#About", current: false, },
   { name: "Languages", href: "#Language", current: false },
   { name: "Contact", href: "#Contact", current: false },
 ];
@@ -20,7 +18,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div id="Home" style={{scrollBehavior:'smooth'}} className="min-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-white border-b border-gray-50">
+          <div id="Home" style={{scrollBehavior: smooth}} className="min-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-white border-b border-gray-50">
             <div className="relative flex items-center justify-between h-16 md:mx-20 mx-0">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
