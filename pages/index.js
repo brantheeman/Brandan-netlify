@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Brandan Pratt</title>
-        <meta name="description" content="Software Engineer" />
+        <meta name="description" content="Software Engineer located in The Bahamas" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
