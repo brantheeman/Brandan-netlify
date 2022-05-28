@@ -2,12 +2,10 @@ import React from "react";
 import {
     AiOutlineConsoleSql,
 } from "react-icons/ai";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGraphql, SiFlutter, SiVuedotjs } from "react-icons/si";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit} from "react-icons/si";
 
 function services() {
   return (
-    <Link activeClass="active" to="/services" smooth={true}>
     <div id="Language" className="flex-col justify-center items-center my-20">
       <p className="text-violet-500 uppercase text-center">Languages & Frameworks</p>
       <h2 className="text-5xl  text-center">
@@ -54,7 +52,6 @@ function services() {
         </div>
       </div>
     </div>
-    </Link>
   );
 }
 
