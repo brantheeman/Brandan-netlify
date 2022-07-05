@@ -20,7 +20,7 @@ function Footer() {
               <a href="https://github.com/brantheeman" target="_blank">
               <FaGithub  className="text-2xl cursor-pointer text-gray-500 hover:text-black" />
               </a>
-              <a href="https://twitter.com/JCrimsxn" target="_blank">
+              <a href="https://twitter.com/_KingsKid_" target="_blank">
               <FaTwitter className="text-2xl cursor-pointer text-gray-500 hover:text-blue-400" />
               </a>
               <a href='https://www.linkedin.com/in/brandan-p-267549114/' target="_blank">
