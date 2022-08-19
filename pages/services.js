@@ -2,7 +2,7 @@ import React from "react";
 import {
     AiOutlineConsoleSql,
 } from "react-icons/ai";
-import { SiHtml5, SiCss3, SiJavascript, SiLaravel, SiGit} from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiLaravel, SiRust, SiGit} from "react-icons/si";
 
 function services() {
   return (
@@ -41,6 +41,12 @@ function services() {
             <SiLaravel className="text-4xl text-gray-600 group-hover:text-white" />
             <h1 className="text-xl text-gray-800 font-semibold group-hover:text-white my-2">
               Laravel
+            </h1>
+          </div>
+      <div className="group flex-col cursor-pointer justify-center items-center border hover:bg-orange-500 hover:shadow-lg  border-violet-100 rounded-md p-8 hover:border-violet-500">
+            <SiRust className="text-4xl text-gray-600 group-hover:text-white" />
+            <h1 className="text-xl text-gray-800 font-semibold group-hover:text-white my-2">
+              Rust
             </h1>
           </div>
           <div className="group flex-col cursor-pointer justify-center items-center border hover:bg-orange-500 hover:shadow-lg  border-violet-100 rounded-md p-8 hover:border-violet-500">
