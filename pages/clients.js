@@ -10,10 +10,7 @@ function clients() {
       <div className="flex justify-center items-center">
         <div className="flex-wrap justify-self-auto shrink md:text-left ">
           <p className="text-3xl px-8 py-8 ">
-              I am an experienced Software Engineer located in Nassau, Bahamas. I am pursuing my Associates Degree in Software Engineering.
-              I have been a Software Developer for one year now, and I am open to working on projects of all sorts, mainly in Web Development.
-              I am proficient with HTML5, CSS3, and JavaScript, and I am currently developing my skills with React and Vue. I am knowlegeable about database management, python, and java, but I mainly focus on web technologies.
-              If you're interested in working with me, feel free to contact me to get in touch. I look forward to helping your project come to life.
+             I am a proud member of the Software Engineering team at Plato Alpha Designs specializing in web and web application development. I am skilled in various web technologies including HTML5, CSS, JavaScript and the Laravel framework. I love to work on a variety of projects and bring the ideas of individuals to life.
           </p>
         </div>
       </div>
