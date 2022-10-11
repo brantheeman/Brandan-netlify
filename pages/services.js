@@ -43,12 +43,6 @@ function services() {
               Laravel
             </h1>
           </div>
-      <div className="group flex-col cursor-pointer justify-center items-center border hover:bg-orange-500 hover:shadow-lg  border-violet-100 rounded-md p-8 hover:border-violet-500">
-            <SiRust className="text-4xl text-gray-600 group-hover:text-white" />
-            <h1 className="text-xl text-gray-800 font-semibold group-hover:text-white my-2">
-              Rust
-            </h1>
-          </div>
           <div className="group flex-col cursor-pointer justify-center items-center border hover:bg-orange-500 hover:shadow-lg  border-violet-100 rounded-md p-8 hover:border-violet-500">
             <SiGit className="text-4xl text-gray-600 group-hover:text-white" />
             <h1 className="text-xl text-gray-800 font-semibold group-hover:text-white my-2">
